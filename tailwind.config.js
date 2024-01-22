@@ -28,11 +28,20 @@ module.exports = {
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "radar-spin": "radar-spin 10s linear infinite",
       },
       keyframes: {
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+        "radar-spin": {
+          from: {
+            transform: "rotate(20deg)",
+          },
+          to: {
+            transform: "rotate(380deg)",
           },
         },
       },

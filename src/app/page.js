@@ -14,7 +14,8 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "./components/InfinteCard/Marquee";
-
+import { IconContainer } from "./components/Radar/IconContainer";
+import { Radar } from "./components/Radar/Radar";
 export default function Home() {
   const features = [
     {
@@ -260,6 +261,55 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="relative bg-slate-900 flex h-96 w-full  flex-col items-center justify-center space-y-4 overflow-hidden px-4">
+        <div className="mx-auto w-full max-w-3xl">
+          <div className="flex w-full  items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
+            <IconContainer text="Web Development" delay={0.2} />
+            <IconContainer
+              delay={0.4}
+              text="Decentralized apps"
+              icon={<FaHandshake className=" h-8 w-8 text-white" />}
+            />
+            <IconContainer
+              text="Blockchain"
+              delay={0.3}
+              icon={<FaHandshake className=" h-8 w-8 text-white" />}
+            />
+          </div>
+        </div>
+        <div className="mx-auto w-full max-w-md">
+          <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
+            <IconContainer
+              text="Crypto Exchange"
+              delay={0.5}
+              icon={<FaHandshake className=" h-8 w-8 text-white" />}
+            />
+            <IconContainer
+              text="NFT"
+              icon={<FaHandshake className=" h-8 w-8 text-white" />}
+              delay={0.8}
+            />
+          </div>
+        </div>
+        <div className="mx-auto w-full max-w-3xl">
+          <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
+            <IconContainer
+              delay={0.6}
+              text="Token Development"
+              icon={<FaHandshake className=" h-8 w-8 text-white" />}
+            />
+            <IconContainer
+              delay={0.7}
+              text="Metaverse"
+              icon={<FaHandshake className=" h-8 w-8 text-white" />}
+            />
+          </div>
+        </div>
+
+        <Radar className="absolute -bottom-12" />
+        <div className="absolute bottom-0 z-[41] h-px w-full bg-black" />
+      </div>
     </main>
   );
 }

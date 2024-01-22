@@ -73,7 +73,7 @@ const HeroSection = () => {
         <Link href="/">
           <motion.button
             variants={ctaButtonVariants}
-            className="bg-blue-500 text-white py-2 px-6 rounded-full mt-4 hover:bg-blue-600 transition duration-300"
+            className="bg-white text-black py-2 px-6 rounded-full hover:[box-shadow:rgb(255,255,255)_9px_9px] [box-shadow:rgb(0,0,0)_9px_9px] mt-4 hover:bg-slate-600 hover:text-white transition duration-300"
           >
             Contact Us
           </motion.button>

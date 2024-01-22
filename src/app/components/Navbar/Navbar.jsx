@@ -117,7 +117,7 @@ const Navbar = () => {
       transition={{ duration: 0.3 }}
       className="bg-slate-400 w-full fixed p-6 rounded-b-lg  "
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex items-center md:justify-between">
         <div className=" flex items-center text-2xl">
           <Link
             href="/"
@@ -126,9 +126,9 @@ const Navbar = () => {
             <Image
               src="/CElogo.png"
               alt="logo"
-              width={250}
-              height={450}
-              className=" object-cover"
+              width={150}
+              height={150}
+              className="h-full w-full object-cover"
             />
           </Link>
         </div>
@@ -219,7 +219,7 @@ const Navbar = () => {
             className="group  text-black font-medium transition-all duration-300 ease-in-out"
           >
             <p className="bg-left-bottom  bg-gradient-to-r from-purple-500 to-purple-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              Contact
+              Contact Us
             </p>
           </Link>
         </div>
@@ -243,7 +243,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden absolute rounded-lg  w-full z-1999 bg-white">
+        <div className="md:hidden absolute rounded-lg  w-full z-99999 bg-white">
           <div className="flex flex-col space-y-4">
             <Link
               href="/"

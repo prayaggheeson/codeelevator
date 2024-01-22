@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <section className="bg-slate-400 text-black">
-      <div className="flex w-screen flex-col px-6 py-20 lg:px-10 xl:px-24">
+      <div className="flex w-screen flex-col px-6 pt-10 lg:px-8 xl:px-14">
         {/* <!-- TOP CONTAINER --> */}
         <div className="flex flex-col lg:flex-row lg:justify-between">
           {/* <!-- LEFT DIV --> */}
@@ -17,20 +17,20 @@ const Footer = () => {
               <Image
                 src="/CElogo.png"
                 alt="logo code elevator"
-                width={100}
+                width={150}
                 height={100}
-                className="h-full w-full inline-block object-cover"
+                className="h-15 w-64 inline-block object-contain "
               />
             </Link>
-            <p className="font-poppins my-4 max-w-[650px] text-base font-light">
-              Your Cryptocurrency and Blockchain Companion for Unparalleled
-              Success
+            <p className="font-base my-4 max-w-[350px] text-base ">
+              A-610, Swastik Universal Bulding, Near Valentine Multiplex, Piplod
+              Surat, Gujarat -395007
             </p>
             {/* <!-- NEWSLETTER & EMAIL --> */}
             <div className="flex flex-col">
               <form action="" className="mb-10 mt-5 max-w-[421px]">
                 <div className="relative">
-                  <label for="email" className="font-inter font-medium">
+                  <label htmlFor="email" className="font-inter font-medium">
                     SUBSCRIBE TO NEWSLETTER
                   </label>
                   <input
@@ -46,7 +46,10 @@ const Footer = () => {
                 </div>
               </form>
               <div>
-                <h3 for="email" className="font-inter mb-4 mt-8 font-medium">
+                <h3
+                  htmlFor="email"
+                  className="font-inter mb-4 mt-8 font-medium"
+                >
                   EMAIL US
                 </h3>
                 <p className="font-inter text-base">info@codeelevator.in</p>
@@ -118,7 +121,7 @@ const Footer = () => {
             <a href="" className="mr-4 transition hover:text-purple-900">
               <svg
                 className="fill-current"
-                widthpurple
+                width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"

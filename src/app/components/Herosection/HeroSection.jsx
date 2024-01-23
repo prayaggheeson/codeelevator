@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { TypewriterEffectSmooth } from "./Typewriter";
+import Marquee from "react-fast-marquee";
 
 const headingVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -35,24 +36,25 @@ const ctaButtonVariants = {
 const HeroSection = () => {
   const words = [
     {
-      text: "Build",
+      text: "Transform",
     },
     {
-      text: "awesome",
+      text: "your",
     },
     {
-      text: "apps",
+      text: "crypto",
     },
     {
-      text: "with",
+      text: "dreams",
     },
     {
-      text: "Code Elevator.",
+      text: "into reality",
       className: "text-slate-500 dark:text-blue-500",
     },
   ];
+
   return (
-    <div className="min-h-screen w-full bg-gradient-to-t from-slate-900 via-purple-900 to-slate-900 flex flex-col items-center justify-center antialiased">
+    <div className="min-h-screen w-screen bg-gradient-to-b from-slate-900 via-purple-900 to-funhisa-100 flex flex-col items-center justify-center ">
       {/* Content with animation */}
       <motion.div
         variants={headingVariants}
@@ -60,25 +62,33 @@ const HeroSection = () => {
         initial="hidden"
         animate="visible"
       >
-        <h1 className="text-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
-          Code Elevator
+        <h1 className="text-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-slate-400 font-sans font-bold">
+          Discover Innovation
         </h1>
         <TypewriterEffectSmooth words={words} />
         <motion.p
           variants={subTitleVariants}
-          className="text-neutral-500 max-w-lg mx-auto my-4 text-base"
+          className="text-slate-300 max-w-lg mx-auto my-4 text-base"
         >
-          Start your crypto and blockchain journey with us today
+          Accelerate your crypto and blockchain journey with us today.
         </motion.p>
         <Link href="/">
           <motion.button
             variants={ctaButtonVariants}
             className="bg-white text-black py-2 px-6 rounded-full hover:[box-shadow:rgb(255,255,255)_9px_9px] [box-shadow:rgb(0,0,0)_9px_9px] mt-4 hover:bg-slate-600 hover:text-white transition duration-300"
           >
-            Contact Us
+            Get Started
           </motion.button>
         </Link>
       </motion.div>
+
+      <div className="min-w-screen p-[1rem] my-12 bg-slate-400 rotate-[-4deg] ">
+        <Marquee autoFill pauseOnHover speed={300} className="">
+          <p className="text-3xl font-semibold">
+            {""} Develop your Blockchain with Our Experts ✨
+          </p>
+        </Marquee>
+      </div>
     </div>
   );
 };

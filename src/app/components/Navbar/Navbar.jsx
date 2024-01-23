@@ -115,9 +115,9 @@ const Navbar = () => {
       initial="hidden"
       animate="visible"
       transition={{ duration: 0.3 }}
-      className="bg-slate-400 w-full fixed p-6 rounded-b-lg  "
+      className="bg-slate-400 w-screen fixed p-6 rounded-b-lg  "
     >
-      <div className="container mx-auto flex items-center md:justify-between">
+      <div className="container mx-auto flex items-center justify-between">
         <div className=" flex items-center text-2xl">
           <Link
             href="/"

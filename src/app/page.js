@@ -90,7 +90,7 @@ export default function Home() {
         animate="visible"
         className="px-5 w-full py-16 md:px-10 md:py-24 lg:py-32"
       >
-        <div className="mx-auto w-full max-w-7xl rounded-[48px] bg-black py-20 text-white [box-shadow:rgb(59,7,200)_9px_9px]">
+        <div className="mx-auto w-full max-w-7xl rounded-[48px] bg-black py-20 text-white [box-shadow:rgb(59,7,100)_9px_9px]">
           <motion.div
             variants={headingVariants}
             className="mx-auto text-center mb-6 max-w-[720px] lg:mb-12"
@@ -104,7 +104,7 @@ export default function Home() {
           </motion.div>
           <motion.div
             variants={paragraphVariants}
-            className="mx-auto max-w-[630px]"
+            className="mx-auto p-4 md:max-w-[630px]"
           >
             <p className="text-[#e0e0e0]">
               Elevate your crypto and blockchain experience with Code Elevator.
@@ -117,7 +117,7 @@ export default function Home() {
           </motion.div>
           <motion.div
             variants={buttonVariants}
-            className="mx-auto text-center mt-6"
+            className="mx-auto text-center p-4 mt-6"
           >
             <Link
               href="#"
@@ -131,7 +131,7 @@ export default function Home() {
       </motion.div>
 
       <section className="  px-5 py-12 md:px-10">
-        <div className="grid w-full grid-cols-1 items-center gap-8 rounded-3xl bg-black p-[60px] sm:grid-cols-3 sm:gap-12 md:grid-cols-5 md:gap-6">
+        <div className="grid w-full grid-cols-2 items-center gap-8 rounded-3xl bg-black p-[60px] sm:grid-cols-3 sm:gap-12 md:grid-cols-5 md:gap-6">
           <div className="flex justify-center">
             <Image
               src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63982e4716676240e0813cdf_Microsoft%20Logo.svg"
@@ -277,7 +277,7 @@ export default function Home() {
             What our clients are saying
           </h2>
           {/* <!-- Testimonial List--> */}
-          <ul className="grid gap-8 sm:grid-cols-2">
+          <ul className="grid grid-cols-2 gap-8 sm:grid-cols-2">
             <li>
               <div className="mb-5 max-w-sm rounded-br-[99px] rounded-tl-[60px] rounded-tr-[99px] bg-[#f2f2f7] px-8 py-6 md:mb-8">
                 <p className="text-[#647084]">
@@ -355,46 +355,6 @@ export default function Home() {
                 <div className="flex flex-col">
                   <h6 className="font-bold">Nathan Smich</h6>
                   <p className="text-sm text-[#636262]">Product Manager</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="mb-5 max-w-sm rounded-br-[99px] rounded-tl-[60px] rounded-tr-[99px] bg-[#f2f2f7] px-8 py-6 md:mb-8">
-                <p className="text-[#647084]">
-                  “Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit
-                  amet luctus venenatis elit ut aliquam, purus sit amet luctus
-                  venenatis&quot;
-                </p>
-              </div>
-              <div className="mb-5 flex lg:mb-8">
-                <img
-                  src="https://assets.website-files.com/6357722e2a5f19121d37f84d/6358cfd73c2bb8cd5b2c4662_Ellipse%205-6.png"
-                  alt=""
-                  className="mr-4 h-16 w-16"
-                />
-                <div className="flex flex-col">
-                  <h6 className="font-bold">Martin Midtbo</h6>
-                  <p className="text-sm text-[#636262]">Designer</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="mb-5 max-w-sm rounded-br-[99px] rounded-tl-[60px] rounded-tr-[99px] bg-[#f2f2f7] px-8 py-6 md:mb-8">
-                <p className="text-[#647084]">
-                  “Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit
-                  amet luctus venenatis elit ut aliquam, purus sit amet luctus
-                  venenatis&quot;
-                </p>
-              </div>
-              <div className="mb-5 flex lg:mb-8">
-                <img
-                  src="https://assets.website-files.com/6357722e2a5f19121d37f84d/6358cfd05b21e9eda63baa9b_Ellipse%205-7.png"
-                  alt=""
-                  className="mr-4 h-16 w-16"
-                />
-                <div className="flex flex-col">
-                  <h6 className="font-bold">Amy Lackler</h6>
-                  <p className="text-sm text-[#636262]">Designer</p>
                 </div>
               </div>
             </li>

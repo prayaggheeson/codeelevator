@@ -20,7 +20,7 @@ const Navbar = () => {
       title: "Coin Develpoment",
       icon: "/coindevelopment.png",
       description: "Pioneered Digital Currencies For The Crypto Market!",
-      href: "/service1",
+      href: "/coindevelopment",
     },
     {
       id: 2,
@@ -115,7 +115,7 @@ const Navbar = () => {
       initial="hidden"
       animate="visible"
       transition={{ duration: 0.3 }}
-      className="bg-slate-400 w-screen fixed p-6 rounded-b-lg  "
+      className="bg-slate-400 relative w-screen z-999 p-6 rounded-b-lg  "
     >
       <div className="container mx-auto flex items-center justify-between">
         <div className=" flex items-center text-2xl">
@@ -144,7 +144,7 @@ const Navbar = () => {
           <div
             className={`relative group ${
               isServicesDropdownOpen ? "text-blue-500" : "text-black"
-            } font-medium transition-all duration-300 ease-in-out`}
+            } font-medium transition-all duration-300 ease-in`}
             onClick={toggleServicesDropdown}
           >
             <p className="bg-left-bottom bg-gradient-to-r from-purple-500 to-purple-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
@@ -156,7 +156,7 @@ const Navbar = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{ duration: 0.3 }}
-                className="absolute right-0 my-2 w-[700px] py-2 grid grid-cols-2 gap-6 bg-white rounded-lg shadow-md overflow-hidden"
+                className="absolute right-0 my-2 w-[700px] py-2 grid grid-cols-2 gap-6 bg-white rounded-lg overflow-hidden"
               >
                 {services.map((service) => (
                   <Link
@@ -244,7 +244,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden absolute rounded-lg  w-full z-99999 bg-white">
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col m-4 space-y-4">
             <Link
               href="/"
               className="text-black hover:text-blue-500 transition duration-300"
@@ -257,29 +257,19 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link
-              href="Products"
-              className="text-black hover:text-blue-300 transition duration-300"
-            >
-              Products
-            </Link>
+
             <Link
               href="Services"
               className="text-black hover:text-blue-300 transition duration-300"
             >
               Services
             </Link>
-            <Link
-              href="Machine"
-              className="text-black hover:text-blue-300 transition duration-300"
-            >
-              Machine List
-            </Link>
+
             <Link
               href="Contact"
               className="text-black hover:text-blue-300 transition duration-300"
             >
-              Contact
+              Contact Us
             </Link>
           </div>
         </div>

@@ -83,7 +83,7 @@ const HeroSection = () => {
       </motion.div>
 
       <div className="min-w-screen p-[1rem] my-12 bg-slate-400 rotate-[-4deg] ">
-        <Marquee autoFill pauseOnHover speed={300} className="">
+        <Marquee autoFill pauseOnHover speed={300} className="z-[-1]">
           <p className="text-3xl font-semibold">
             {""} Develop your Blockchain with Our Experts ✨
           </p>

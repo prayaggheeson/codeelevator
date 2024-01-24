@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
@@ -27,14 +28,14 @@ const Navbar = () => {
       title: "Crypto Exchange",
       icon: "/crytoexchange.png",
       description: "Own a fully encrypted crypto exchange",
-      href: "/service2",
+      href: "/cryptoexchange",
     },
     {
       id: 3,
       title: "Crypto Wallet",
       icon: "/wallet.png",
       description: "Securely Receive, Pay, and Store Money",
-      href: "/service3",
+      href: "/cryptowallet",
     },
     {
       id: 4,
@@ -96,17 +97,17 @@ const Navbar = () => {
   ];
 
   const dropdownVariants = {
-    hidden: { opacity: 0, y: -100 },
-    visible: { opacity: 1, y: 10 },
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0 },
   };
 
   const serviceVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0 },
   };
 
   const navbarVariants = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
   };
   return (
@@ -117,7 +118,7 @@ const Navbar = () => {
       transition={{ duration: 0.3 }}
       className="bg-slate-400 relative w-screen z-999 p-6 rounded-b-lg  "
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="   mx-auto flex items-center justify-between">
         <div className=" flex items-center text-2xl">
           <Link
             href="/"
@@ -156,7 +157,7 @@ const Navbar = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{ duration: 0.3 }}
-                className="absolute right-0 my-2 w-[700px] py-2 grid grid-cols-2 gap-6 bg-white rounded-lg overflow-hidden"
+                className="absolute right-0 my-2 w-[1200px] py-2 grid grid-cols-3 gap-6 bg-white rounded-lg overflow-hidden"
               >
                 {services.map((service) => (
                   <Link
@@ -223,7 +224,7 @@ const Navbar = () => {
             </p>
           </Link>
         </div>
-        <div className="md:hidden ">
+        <div className="md:hidden">
           <button onClick={toggleNavbar} className="text-black">
             <svg
               className="w-6 h-6"
@@ -243,7 +244,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden absolute rounded-lg  w-full z-99999 bg-white">
+        <div className="md:hidden absolute rounded-lg w-full z-99999 bg-white">
           <div className="flex flex-col m-4 space-y-4">
             <Link
               href="/"

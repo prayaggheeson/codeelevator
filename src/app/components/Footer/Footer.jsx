@@ -6,10 +6,6 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="absolute bottom-0 left-0">
-        <FaWhatsapp className="tex-4xl text-green-500" />
-      </div>
-
       <section className="bg-slate-400 text-black">
         <div className="flex w-screen flex-col px-6 pt-10 lg:px-8 xl:px-32">
           {/* <!-- TOP CONTAINER --> */}
@@ -33,35 +29,6 @@ const Footer = () => {
                 A-610, Swastik Universal Bulding, Near Valentine Multiplex,
                 Piplod Surat, Gujarat -395007
               </p>
-              {/* <!-- NEWSLETTER & EMAIL --> */}
-              <div className="flex flex-col">
-                <form action="" className="mb-10 mt-5 max-w-[421px]">
-                  <div className="relative">
-                    <label htmlFor="email" className="font-inter font-medium">
-                      SUBSCRIBE TO NEWSLETTER
-                    </label>
-                    <input
-                      type="email"
-                      className="font-inter relative mt-4 w-full rounded-md border border-black bg-[#232323] px-6 py-4 text-base"
-                      placeholder="Enter your email"
-                      name="email"
-                    />
-                    <button
-                      type="submit"
-                      className="absolute right-[15px] top-[55px]"
-                    ></button>
-                  </div>
-                </form>
-                <div>
-                  <h3
-                    htmlFor="email"
-                    className="font-inter mb-4 mt-8 font-medium"
-                  >
-                    EMAIL US
-                  </h3>
-                  <p className="font-inter text-base">info@codeelevator.in</p>
-                </div>
-              </div>
             </div>
             {/* <!-- RIGHT DIV --> */}
             <div className="mt-7 max-w-[700px] grow lg:flex lg:flex-row">

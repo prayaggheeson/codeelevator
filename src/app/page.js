@@ -7,7 +7,6 @@ import {
   FaShippingFast,
   FaCheckCircle,
   FaPuzzlePiece,
-  FaArrowRight,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -15,7 +14,7 @@ import Link from "next/link";
 import { IconContainer } from "./components/Radar/IconContainer";
 import { Radar } from "./components/Radar/Radar";
 import Marquee from "react-fast-marquee";
-
+import CTA from "./components/CallToAction/CTA";
 export default function Home() {
   const features = [
     {
@@ -56,26 +55,6 @@ export default function Home() {
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.8 } },
-  };
-
-  const headingVariants = {
-    hidden: { y: -20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.8, delay: 0.4 } },
-  };
-
-  const paragraphVariants = {
-    hidden: { y: -20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.8, delay: 0.6 } },
-  };
-
-  const buttonVariants = {
-    hidden: { y: -20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.8, delay: 0.8 } },
-  };
-
   const contentVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 0.5 } },
@@ -84,51 +63,7 @@ export default function Home() {
     <main className="flex bg-slate-400 min-w-screen min-h-screen flex-col items-center justify-between ">
       <HeroSection />
 
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="px-5 w-full py-16 md:px-10 md:py-24 lg:py-32"
-      >
-        <div className="mx-auto w-full max-w-7xl rounded-[48px] bg-black py-20 text-white [box-shadow:rgb(59,7,100)_9px_9px]">
-          <motion.div
-            variants={headingVariants}
-            className="mx-auto text-center mb-6 max-w-[720px] lg:mb-12"
-          >
-            <h2 className="mb-4 text-3xl font-semibold md:text-5xl">
-              <span className="px-4 text-purple-800">
-                Empower Your Blockchain Journey with
-              </span>
-              Code Elevator
-            </h2>
-          </motion.div>
-          <motion.div
-            variants={paragraphVariants}
-            className="mx-auto p-4 md:max-w-[630px]"
-          >
-            <p className="text-[#e0e0e0]">
-              Elevate your crypto and blockchain experience with Code Elevator.
-              Our commitment goes beyond code; we are dedicated to crafting
-              solutions that inspire confidence, foster innovation, and drive
-              success. Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              ut aliquam, purus sit amet luctus venenatis, lectus magna
-              fringilla urna.
-            </p>
-          </motion.div>
-          <motion.div
-            variants={buttonVariants}
-            className="mx-auto text-center p-4 mt-6"
-          >
-            <Link
-              href="#"
-              className="inline-block rounded-xl bg-white hover:[box-shadow:rgb(255,255,255)_9px_9px] hover:bg-slate-600 hover:text-white transition-all duration-300 px-8 py-4 font-semibold text-black [box-shadow:rgb(59,7,100)_9px_9px]"
-            >
-              Experience the Code Elevator Difference
-              <FaArrowRight className="inline ml-2 hover:rotate-45" />
-            </Link>
-          </motion.div>
-        </div>
-      </motion.div>
+      <CTA />
 
       <section className="  px-5 py-12 md:px-10">
         <div className="grid w-full grid-cols-2 items-center gap-8 rounded-3xl bg-black p-[60px] sm:grid-cols-3 sm:gap-12 md:grid-cols-5 md:gap-6">
@@ -413,11 +348,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="bg-slate-900">
-        <h2 className="text-center text-3xl text-slate-400 font-bold md:text-5xl">
-          Top Coins
-        </h2>
-
+      <div className="bg-slate-900 pt-8">
         <Marquee pauseOnHover delay={0.5} speed={100} className="">
           <Image
             src={"/coins/6.png"}

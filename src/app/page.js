@@ -200,11 +200,11 @@ export default function Home() {
         </div>
         {/* Add Radar component (assuming it's a valid component) */}
         <Radar className="absolute -bottom-12" />
-        <div className="absolute bottom-0 z-[41] h-px w-full bg-black" />
+        <div className="absolute bottom-0 z-[41] h-px w-full bg-slate-900" />
       </div>
 
       {/* <!-- Section Testimonial --> */}
-      <section className="bg-gradient-to-b from-slate-400 via-purple-900 to-purple-900 w-screen text-white">
+      <section className="bg-gradient-to-b from-slate-900 via-purple-900 to-purple-900 w-screen text-white">
         {/* <!-- Container --> */}
         <div className="mx-auto max-w-5xl px-5 py-16 ">
           {/* <!-- Title --> */}

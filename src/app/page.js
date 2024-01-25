@@ -204,9 +204,9 @@ export default function Home() {
       </div>
 
       {/* <!-- Section Testimonial --> */}
-      <section>
+      <section className="bg-gradient-to-b from-slate-400 via-purple-900 to-purple-900 w-screen text-white">
         {/* <!-- Container --> */}
-        <div className="mx-auto w-full max-w-5xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+        <div className="mx-auto max-w-5xl px-5 py-16 ">
           {/* <!-- Title --> */}
           <h2 className="mb-8 text-center text-3xl font-bold md:mb-14 md:text-5xl">
             What our clients are saying
@@ -297,7 +297,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-slate-900 w-screen text-white">
+      <section className="bg-gradient-to-b from-purple-900 via-purple-900 to-slate-900 w-screen text-white">
         <div className="mx-auto  w-full max-w-7xl px-5 py-4 md:px-8 md:py-12 lg:py-16">
           {/* Title */}
           <h2 className="mb-8 text-3xl font-bold md:text-5xl lg:mb-14">

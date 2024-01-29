@@ -60,8 +60,8 @@ const page = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900">
-      <section>
+    <div className="">
+      <section className="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900">
         {/* <!-- Container --> */}
         <div className="mx-auto w-full text-white max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
           {/* <!-- Component --> */}
@@ -256,12 +256,15 @@ const page = () => {
         </div>
       </section>
 
-      <div className="max-w-2xl mx-auto p-6 ">
-        <div className="bg-white rounded-lg shadow-md p-6">
+      <div className="max-w-2xl mx-auto p-6  ">
+        <div className=" rounded-lg p-6">
           <h1 className="text-4xl text-center font-bold my-8 text-purple-700">
             Frequently Asked Questions (FAQs) - Crypto Exchange Development
           </h1>
-          <FAQ faqData={faqData} />
+          <FAQ
+            faqData={faqData}
+            className="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-950 text-white"
+          />
         </div>
       </div>
       <CTA />

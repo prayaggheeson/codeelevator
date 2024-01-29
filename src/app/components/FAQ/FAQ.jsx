@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const FAQItem = ({ question, answer, isOpen, toggleFAQ }) => {
+const FAQItem = ({ question, answer, isOpen, toggleFAQ, className }) => {
   return (
-    <motion.div layout className="mb-4">
+    <motion.div layout className={`mb-4 `}>
       <motion.div
         onClick={toggleFAQ}
-        className="flex items-center justify-between bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 p-4 rounded-md cursor-pointer hover:bg-gray-200 transition duration-300"
+        className={`flex items-center justify-between ${className} p-4 rounded-md cursor-pointer hover:bg-gray-200 transition duration-300`}
       >
         <h3 className="text-lg font-semibold">{question}</h3>
         <motion.span
@@ -31,7 +31,7 @@ const FAQItem = ({ question, answer, isOpen, toggleFAQ }) => {
   );
 };
 
-const FAQ = ({ faqData }) => {
+const FAQ = ({ faqData, className }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -39,7 +39,7 @@ const FAQ = ({ faqData }) => {
   };
 
   return (
-    <div className="">
+    <div>
       {faqData.map((item, index) => (
         <FAQItem
           key={index}
@@ -47,6 +47,7 @@ const FAQ = ({ faqData }) => {
           answer={item.answer}
           isOpen={index === openIndex}
           toggleFAQ={() => toggleFAQ(index)}
+          className={className}
         />
       ))}
     </div>

@@ -101,7 +101,7 @@ function Page() {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 text-black min-h-screen flex items-center justify-center">
+      <div className="bg-gradient-to-r from-blue-400 to-purple-400 via-pink-200  text-black min-h-screen flex items-center justify-center">
         {/* Content Container */}
         <div className="text-center">
           <motion.h1
@@ -290,7 +290,12 @@ function Page() {
         <h1 className="text-3xl text-center font-bold my-8">
           Frequently Asked Questions (FAQs) - Crypto Wallet Development
         </h1>
-        <FAQ faqData={FaqData} />
+        <FAQ
+          faqData={FaqData}
+          className={
+            "bg-gradient-to-r from-blue-400 to-purple-400 via-pink-200 "
+          }
+        />
       </div>
     </>
   );

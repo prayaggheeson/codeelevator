@@ -358,7 +358,7 @@ const page = () => {
         </div>
       </section>
 
-      <div className=" bg-gradient-to-r from-pink-300 via-blue-300 to-slate-400 py-6 flex flex-col justify-center sm:py-12">
+      <div className=" bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 py-6 flex flex-col justify-center sm:py-12">
         <h1 className="text-center text-4xl mb-4 underline font-semibold">
           Our Process
         </h1>
@@ -369,7 +369,12 @@ const page = () => {
         <h1 className="text-3xl text-center font-bold my-8">
           Frequently Asked Questions (FAQs) - Crypto Wallet Development
         </h1>
-        <FAQ faqData={faqData} />
+        <FAQ
+          faqData={faqData}
+          className={
+            "bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"
+          }
+        />
       </div>
       <CTA />
     </div>

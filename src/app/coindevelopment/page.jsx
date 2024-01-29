@@ -503,7 +503,12 @@ export default function HeroParallaxDemo() {
         <h1 className="text-3xl text-center font-bold my-8">
           Frequently Asked Questions (FAQs) - Crypto Coin Development
         </h1>
-        <FAQ faqData={faqData} />
+        <FAQ
+          faqData={faqData}
+          className={
+            "bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 "
+          }
+        />
       </div>
       <CTA />
     </>

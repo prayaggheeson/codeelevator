@@ -1,13 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <>
-      <section className="bg-slate-400 text-black">
-        <div className="flex w-screen flex-col px-6 pt-10 lg:px-8 xl:px-32">
+      <section className="bg-slate-400 w-screen  text-black">
+        <div className="flex flex-col px-6 pt-10 lg:px-8 xl:px-32">
           {/* <!-- TOP CONTAINER --> */}
           <div className="flex flex-col lg:flex-row lg:justify-between">
             {/* <!-- LEFT DIV --> */}

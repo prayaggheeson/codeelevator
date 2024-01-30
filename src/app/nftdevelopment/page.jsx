@@ -266,7 +266,7 @@ const Page = () => {
                 className="rounded-md bg-black hover:translate-x-2 hover:shadow-lg hover:shadow-purple-500 transition duration-200 p-8 md:p-10"
               >
                 <div className="flex flex-row items-center justify-between">
-                  <p className="mr-4 rounded-md text-xl bg-slate-100 text-purple-500  px-4 py-2 font-semibold ">
+                  <p className="mr-4 rounded-md text-xl bg-slate-100 text-orange-500  px-4 py-2 font-semibold ">
                     {item.category}
                   </p>
                 </div>
@@ -291,7 +291,7 @@ const Page = () => {
         {/* <!-- Container --> */}
         <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
           {/* <!-- Title --> */}
-          <h2 className="mx-auto mb-8 max-w-5xl text-white text-center text-3xl font-bold md:mb-12 md:text-5xl lg:mb-16">
+          <h2 className="mx-auto mb-8 max-w-5xl text-orange-500 text-center text-3xl font-bold md:mb-12 md:text-5xl lg:mb-16">
             NFT Marketplace Development Process
           </h2>
           {/* <!-- Content --> */}
@@ -343,7 +343,7 @@ const Page = () => {
         </div>
       </section>
       <div className="container mx-auto px-4 md:mb-6">
-        <h1 className="text-3xl text-center font-bold my-8">
+        <h1 className="text-3xl text-center text-orange-500 font-bold my-8">
           Frequently Asked Questions (FAQs) - Crypto Wallet Development
         </h1>
         <FAQ

@@ -136,7 +136,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <Link
             href="/"
-            className="group text-black  transition-all duration-300 ease-in-out"
+            className="group text-black transition-all duration-300 ease-in-out"
           >
             <p className="bg-left-bottom font-medium bg-gradient-to-r from-purple-500 to-purple-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
               Home

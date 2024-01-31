@@ -10,7 +10,7 @@ import {
   BiCheckShield,
   BiNetworkChart,
 } from "react-icons/bi";
-import { FaMoneyBill, FaTruck, FaHospital } from "react-icons/fa"; // Import icons from a library like react-icons
+import { FaMoneyBill, FaTruck, FaHospital } from "react-icons/fa";
 import CTA from "../components/CallToAction/CTA";
 import FAQ from "../components/FAQ/FAQ";
 
